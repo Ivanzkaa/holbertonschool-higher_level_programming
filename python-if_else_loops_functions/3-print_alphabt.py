@@ -3,3 +3,4 @@ for alphabet in range(97, 123):
     if alphabet in [101, 113]:
         continue
     print("{:c}".format(alphabet), end="")
+    
