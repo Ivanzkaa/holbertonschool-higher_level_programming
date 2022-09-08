@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-from ast import arg
-
-
 if __name__ == "__main__":
     from sys import argv
     length = len(argv)
