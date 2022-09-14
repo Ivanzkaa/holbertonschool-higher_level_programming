@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-from copy import copy
-
-
 def new_in_list(my_list, idx, element):
 
     if idx < 0:
