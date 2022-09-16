@@ -6,11 +6,11 @@ def roman_to_int(roman_string):
     if roman_string is None or type(roman_string) != str:
         return 0
 
-    add_num = 0
+    add = 0
 
     for num in range(0, len(roman_string)):
         if num > 0 and rom_num[roman_string[num]] > rom_num[roman_string[num - 1]]:
-            add_num += rom_num[roman_string[num]] - rom_num[roman_string[num - 1]] * 2
+            add += rom_num[roman_string[num]] - rom_num[roman_string[num - 1]] * 2
         else:
             add_num += rom_num[roman_string[num]]
-    return add_num
+    return add
