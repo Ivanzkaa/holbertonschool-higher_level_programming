@@ -6,7 +6,7 @@ def safe_print_list_integers(my_list=[], x=0):
             print("{:d}".format(my_list[numbers]), end="")
             numbers += 1
         except IndexError:
-            numbers +=1
+            numbers += 1
             continue
     print()
     return numbers
