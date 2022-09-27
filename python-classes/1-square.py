@@ -2,6 +2,7 @@
 """
 the class for the square
 """
+
 class Square:
     """
     a class for defining a square with a private instance
@@ -9,4 +10,4 @@ class Square:
 
 
     def __init__(self, square):
-        self.__square = Square
+        self.__square = square
