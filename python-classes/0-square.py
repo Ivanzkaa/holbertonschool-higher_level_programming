@@ -2,9 +2,9 @@
 """
 a class for creating a square
 """
+
+
 class Square:
-
-
     """
     an empty class square
     """
