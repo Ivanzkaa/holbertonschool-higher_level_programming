@@ -4,6 +4,9 @@ before the square class
 """
 
 
+from re import T
+
+
 class Square:
     """
     the square class
@@ -36,12 +39,15 @@ class Square:
         """
         setting the position property
         """
-        for element in value:
-            if element < 0:
-                raise TypeError("position must be a tuple of\
-                    2 positive integers")
-            else:
-                self.__position = value
+        if not isinstance(value, tuple):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if len(value) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if not (isinstance(value[0], int) and isinstance(value[1], int)):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if value[0] < 0 or value[1] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        self.__position = value
 
     def area(self):
         """
