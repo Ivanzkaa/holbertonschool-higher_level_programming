@@ -4,9 +4,6 @@ before the square class
 """
 
 
-from re import T
-
-
 class Square:
     """
     the square class
