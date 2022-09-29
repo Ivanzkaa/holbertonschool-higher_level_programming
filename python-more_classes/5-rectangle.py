@@ -76,4 +76,4 @@ class Rectangle:
         """
         deleting the rectangle
         """
-    print("Bye rectangle...")
+        print("Bye rectangle...")
