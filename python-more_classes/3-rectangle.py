@@ -14,6 +14,7 @@ class Rectangle:
         """
         self.__height = height
         self.__width = width
+
     def area(self):
         """
         calculating the area of the rectangle
@@ -55,7 +56,7 @@ class Rectangle:
 
     def __str__(self):
         """
-        
+        the new string
         """
         new_strng = ""
         if self.__width == 0 or self.__height == 0:
