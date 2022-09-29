@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """
+Befroe the class
 """
 
 
 class Rectangle:
     """
+    Creating the rectangle class
     """
     def __init__(self, width=0, height=0):
         """
