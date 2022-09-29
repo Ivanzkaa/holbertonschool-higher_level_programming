@@ -11,5 +11,5 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     new_string = "".join([word if word not in ".?:"
-                        else word + "\n\n" for word in text])
+                            else word + "\n\n" for word in text])
     print("\n".join([l.strip() for l in new_string.split("\n")]), end="")
