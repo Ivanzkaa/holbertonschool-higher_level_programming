@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """
+dividing the matrix before creating the class
 """
 
 
 def matrix_divided(matrix, div):
     """
+    the class for the matrix division and the function that does it
     """
     new_list = []
 
