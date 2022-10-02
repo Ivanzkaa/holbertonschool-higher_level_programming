@@ -6,6 +6,7 @@ inheriting from the base geometry tasks
 
 Rectangle = __import__("9-rectangle").Rectangle
 
+
 class Square(Rectangle):
     """
     The class square
@@ -15,7 +16,8 @@ class Square(Rectangle):
         super().__init__(size, size)
         self.__size = size
 
-def area(self):
+
+    def area(self):
         """
         Returning the rectangle area
         """
