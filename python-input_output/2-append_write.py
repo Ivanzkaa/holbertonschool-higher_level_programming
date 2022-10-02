@@ -4,7 +4,7 @@ Before writing from the file
 """
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     """
     writing a string to a text file\
     and returning the number of chars
