@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """
+Before the pascal triangle
 """
 
 
 def pascal_triangle(n):
     """
+    the pascal triangle function
     """
     the_list = []
     if n <= 0:
