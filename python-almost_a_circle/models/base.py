@@ -8,13 +8,13 @@ class Base:
     """
     The creation of the base class 
     """
+    __nb_objects = 0
     def __init__(self, id=None):
         """
-        after the base class and the id
+        after the base class and initializing
         """
-        self.__nb_objects = 0
         if id != None:
             self.id = id
         else:
-            Base.__nb_objects =+ 1
+            Base.__nb_objects += 1
             self.id = Base.__nb_objects
