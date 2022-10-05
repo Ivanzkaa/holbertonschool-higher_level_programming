@@ -1,13 +1,16 @@
 #!/usr/bin/python3
 """
+Before creating the base class
 """
 
 
 class Base:
     """
+    The creation of the base class 
     """
     def __init__(self, id=None):
         """
+        after the base class and the id
         """
         self.__nb_objects = 0
         if id != None:
