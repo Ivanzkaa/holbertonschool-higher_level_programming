@@ -102,5 +102,6 @@ class Rectangle(Base):
         updating the class so that it returns the rectangle id\
         x, y, width and height
         """
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id
+        , self.x, self.y, self.width, self.height)
 
