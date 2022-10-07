@@ -11,7 +11,6 @@ class Square(Rectangle):
         self.size = size
         super().__init__(size, size, x=x, y=y, id=id)
 
-
     def __str__(self):
         """returning the square"""
         return "[Square] ({}) ({})/({}) - ({})".format(
