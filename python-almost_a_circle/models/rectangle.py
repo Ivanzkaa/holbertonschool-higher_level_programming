@@ -117,6 +117,7 @@ class Rectangle(Base):
                 setattr(self, a, c)
 
     def to_dictionary(self):
+        """adding the dictionary"""
         return {
             "id": self.id,
             "width": self.width,
