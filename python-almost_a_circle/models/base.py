@@ -24,6 +24,7 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """the json string representation of list_\
         of dictionaies"""
@@ -32,5 +33,3 @@ class Base:
             return "[]"
         return json.dumps(list_dictionaries)
 
-    def save_to_file(cls, list_objs):
-        
