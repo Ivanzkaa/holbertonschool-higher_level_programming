@@ -28,6 +28,6 @@ class Base:
         """the json string representation of list_\
         of dictionaies"""
 
-        if list_dictionaries is None:
+        if list_dictionaries is None or list_dictionaries == []:
             return "[]"
         return json.dumps(list_dictionaries)
