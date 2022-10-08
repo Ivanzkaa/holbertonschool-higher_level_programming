@@ -5,6 +5,8 @@ Before creating the base class
 
 
 import json
+from operator import index
+from os import path
 
 
 class Base:
@@ -63,3 +65,12 @@ class Base:
             dummy_func = cls(1, 1)
         dummy_func.update(**dictionary)
         return dummy_func
+
+    @classmethod
+    def load_from_file(cls):
+        """returning the list of the instances"""
+        if path.exists(cls.__name__ + "json") is False:
+            return []
+        with open(cls.__name__ + "json", "r") as file:
+            list = cls.from_json_string(file.read())
+            return [cls.create(**index) for index in list]
