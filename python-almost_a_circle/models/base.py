@@ -51,4 +51,4 @@ class Base:
         representation json_string"""
         if json_string is None or json_string == []:
             return "[]"
-        return json.dumps(json_string)
+        return json.loads(json_string)
