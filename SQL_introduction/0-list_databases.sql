@@ -1,2 +1,2 @@
---Listing databases:
+/*Listing databases*/
 SHOW DATABASES;
