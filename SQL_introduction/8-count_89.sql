@@ -1,3 +1,3 @@
 -- Displaying the number of records
-SELECT COUNT (id = 89)
+SELECT COUNT (id)
 FROM first_table;
