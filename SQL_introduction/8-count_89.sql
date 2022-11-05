@@ -1,4 +1,4 @@
 -- Displaying the number of records
-SELECT COUNT (*)
+SELECT COUNT (89)
 FROM first_table
-WHERE id=89;
+WHERE id = 89;
