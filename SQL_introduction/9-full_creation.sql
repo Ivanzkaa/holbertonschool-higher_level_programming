@@ -1,3 +1,4 @@
+-- Creating a second table and adding the values
 CREATE TABLE IF NOT EXISTS hbtn_test_db_9.second_table (
     id INT,
     name VARCHAR(256),
