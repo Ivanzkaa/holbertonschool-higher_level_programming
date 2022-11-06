@@ -1,4 +1,4 @@
 -- Updating the table
 UPDATE second_table
-SET name = "Bob"
-WHERE score = 10;
+SET score = 10
+WHERE name = "Bob";
