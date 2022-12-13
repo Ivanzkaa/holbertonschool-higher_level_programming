@@ -5,5 +5,5 @@ let multi_lang = ["C is fun",
 "JavaScritp is amazing"];
 
 for (let i = 0; i <multi_lang.length; i++) {
-    console.log(multi_lang[i])
+    console.log(multi_lang[i]);
 }
