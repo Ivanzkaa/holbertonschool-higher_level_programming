@@ -15,11 +15,10 @@ module.exports = class Rectangle {
     }
 
     rotate () {
-        this.width = [this.height, this.height = this.width][0];
+        [this.width, this.height] = [this.height, this.width];
     }
 
     double () {
-        this.width *= 2;
-        this.w *= 2;
+        [this.width, this.height] = [this.width * 2, this.height * 2];
     }
 };
