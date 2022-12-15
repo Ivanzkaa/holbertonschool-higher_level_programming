@@ -1,6 +1,12 @@
 #!/usr/bin/node
 
-const fp = require("fp");
-fp.readFile(process.argv[2], "utf8", function (error, content) {
-    console.log(error || content);
+const fs = require("fs");
+const file_dest = process.argv[2];
+
+fs.readFile(file_dest, "utf8", function (error, data) {
+    if (error) {
+        console.log(error);
+    } else {
+        process.stdout.write(data);
+    }
 });
