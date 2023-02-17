@@ -1,13 +1,11 @@
 #!/usr/bin/node
 
-require('request').get(process.argv[2], function (err, r, body) {
-    if (err) {
-        console.log(err);
-    } else {
-        require('fs').writeFile(process.argv[3], body, 'utf-8', function (err) {
-            if (err) {
-                console.log(err);
-            }
-        });
-    }
+const fs = require('fs');
+const request = require('request');
+
+request.get({ url: process.argv[2] }, (err, response, body) => {
+  if (err) return;
+  fs.writeFile(process.argv[3], body, (err) => {
+    if (err) console.error(err);
+  });
 });
