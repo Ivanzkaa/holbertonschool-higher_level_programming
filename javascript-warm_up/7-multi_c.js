@@ -1,10 +1,9 @@
 #!/usr/bin/node
-
-const x = Math.floor(Number(process.argv[2]));
-if (isNaN(x)) {
-    console.log("Missing number of occurences");
+let n = parseInt(process.argv[2]);
+if (!isNaN(n)) {
+  for (n--; n >= 0; n--) {
+    console.log('C is fun');
+  }
 } else {
-    for (let i = 0; i < x; i++) {
-        console.log("C is fun");
-    }
+  console.log('Missing number of occurrences');
 }
