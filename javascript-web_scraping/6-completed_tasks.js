@@ -1,17 +1,20 @@
 #!/usr/bin/node
 
 const request = require('request');
-request(process.argv[2], function (error, response, body) {
-    if (!error) {
-        const todos = JSON.parse(body);
-        let completed = {};
-        todos.forEach((todo) => {
-            if (todo.completed && completed[todo.userId] === undefined) {
-                completed[todo.userId] = 1;
-            } else if (todo.completed) {
-                completed[todo.userId] += 1;
-            }
-        });
-        console.log(completed);
+
+request.get(process.argv[2], function (err, response, body) {
+  if (err) return;
+
+  const dict = {};
+
+  for (const todo of JSON.parse(body)) {
+    if (!(todo.userId in dict) && todo.completed === true) {
+      dict[todo.userId] = 0;
     }
+    if (todo.completed === true) {
+      dict[todo.userId] += 1;
+    }
+  }
+
+  console.log(dict);
 });
