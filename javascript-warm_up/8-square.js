@@ -1,13 +1,9 @@
 #!/usr/bin/node
-
-const square_size = Math.floor(Number(process.argv[2]));
-if (isNaN(square_size)) {
-    console.log("Missing size");
+const n = parseInt(process.argv[2]);
+if (!isNaN(n)) {
+  for (let i = 0; i < n; i++) {
+    console.log('X'.repeat(n));
+  }
 } else {
-    for (let i = 0; i < square_size; i++) {
-        let row = "";
-        for (let b = 0; b < square_size; b++) row += "X";
-        console.log(row);
-    }
+  console.log('Missing size');
 }
-
