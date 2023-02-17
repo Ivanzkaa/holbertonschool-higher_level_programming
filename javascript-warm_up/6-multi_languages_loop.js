@@ -1,7 +1,10 @@
 #!/usr/bin/node
 
-let multi_lang = ["C is fun", "Python is cool", "JavaScritp is amazing"];
+/* Array.lenght => Gets or sets the length of the array.
+This is a number one higher than the highest index in the array.
+*/
+const array = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-for (let i = 0; i < multi_lang.length; i++) {
-    console.log(multi_lang[i]);
+for (let i = 0; i < array.length; i++) {
+  console.log(array[i]);
 }
