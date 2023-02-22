@@ -1,5 +1,11 @@
 #!/usr/bin/node
-// counts number of occurences of element in list
-exports.nbOccurences = function (list, element) {
-    return list.filter(x => x === element).length;
+
+exports.nbOccurences = function (list, searchElement) {
+    let num_occurences = 0;
+    for (let i in list) {
+        if (list[i] === searchElement) {
+            num_occurences++;
+        }
+    }
+    return num_occurences;
 };

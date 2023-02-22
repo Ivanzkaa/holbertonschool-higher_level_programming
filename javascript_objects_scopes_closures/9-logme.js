@@ -1,6 +1,7 @@
 #!/usr/bin/node
-// Prints and logs number of calls
+
+let num = -1;
 exports.logMe = function (item) {
-    this.times = (this.times || 0) + 1;
-    console.log(`${this.times - 1}: ${item}`);
+    num++;
+    console.log(num + ": " + item);
 };
